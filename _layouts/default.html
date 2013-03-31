@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <!--
+    Checking out the source code? This is just standard bootstrap markup, nothing special.
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="{% if page.description %} {{ page.description }} {% endif %} Thoughts on Software Development and Life">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.author.name }} | Thoughts on Software Development and Life</title>
+        <link href="/css/main.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3 sidebar">
+                    <div class="row">
+                        <a href="/" alt="pwhisenhunt.com Home">
+                            <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" class="profile"/>
+                        </a>
+                    </div>
+
+                    <div class="row">
+                        <h1>
+                            <a class="home" href="/" alt="phillipwhisenhunt.com Home">
+                                {{ site.author.name }}
+                            </a>
+                        </h1>
+                    </div>
+
+                    <div class="row border">
+                        <p>
+                            Hi! I'm a software engineer and entrepreneur living and playing in beautiful <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=austin+tx&aq=&sll=30.266917,-97.734703&sspn=0.022647,0.02223&vpsrc=0&ie=UTF8&hq=&hnear=Austin,+Travis,+Texas&t=m&z=10" alt="Austin, Texas">Austin, TX</a>. I love mountain biking, yoga, fresh juice, anything outside, and long coding sessions while listening to techno. This is my place on the web where I write about software and life.
+                        </p>
+                    </div>
+
+                    <div class="row border">
+                        <ul>
+                            <li {% if page.active == "articles" %} class="active" {% endif %}>
+                                <a href="/">Articles</a>
+                            </li>
+                            <li {% if page.active == "consulting" %} class="active" {% endif %}>
+                                <a href="/consulting" alt="{{ site.author.name }} Consulting">Consulting</a>
+                            </li>
+                            <li {% if page.active == "speaking" %} class="active" {% endif %}>
+                                <a href="/speaking" alt="{{ site.author.name }} Speaking">Speaking</a>
+                            </li>
+                            <li {% if page.active == "about" %} class="active" {% endif %}>
+                                <a href="/about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row border">
+                        <ul class="connect">
+                            <li>
+                                <a href="http://www.twitter.com/{{ site.author.twitter }}" alt="{{ site.author.name }} twitter">
+                                    <img src="/images/twitter.png" alt="twitter icon"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.github.com/{{ site.author.github }}" alt="{{ site.author.name }} github">
+                                    <img src="/images/github.png" alt="github icon"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" alt="{{ site.author.name }} linkedin">
+                                    <img src="/images/linkedin.png" alt="linkedin icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <p class="copy">
+                            <a href="https://github.com/pwhisenhunt/pwhisenhunt.github.com" alt="{{ site.author.name }} Website Repository">
+                                    Fork This Website!
+                                </a>This website was built using awesome open source projects <a href="https://github.com/mojombo/jekyll" alt="Jekyll">Jekyll</a>, <a href="http://twitter.github.com/bootstrap/" alt="Twitter Bootstrap">Twitter Bootstrap</a>, <a href="http://gruntjs.com/" alt="Grunt.js">Grunt.js</a>, <a href="http://sass-lang.com/" alt="SASS">SASS</a>, and <a href="http://html5boilerplate.com/" alt="HTML5 Boilerplate">HTML5 Boilerplate</a>.
+                            This website does not reflect the opinions of my past or present employers.
+                        </p>
+                    </div>
+                </div>
+                <div class="span9">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        <script src="/js/application.js"></script>
+    </body>
+</html>

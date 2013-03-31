@@ -1,0 +1,10 @@
+{
+  "name": "PhillipWhisenhuntWebsite",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-css": "",
+    "grunt-contrib-concat": "",
+    "grunt-contrib-compass": ""
+  }
+}

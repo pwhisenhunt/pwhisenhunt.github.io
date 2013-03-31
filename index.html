@@ -1,1 +1,17 @@
-Hello World! Testing DNS and github pages.
+---
+layout: default
+active: articles
+title: Articles
+---
+<h2>ARTICLES</h2>
+Coming soon . . .
+{% for post in site.posts %}
+    <article>
+        <h3><a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title }}</a></h3>
+        {% if post.img %}<img src="{{ post.img }}" />{% endif %}
+        <p>
+            {{ post.caption }}
+        </p>
+        <h4 class="date">{{ post.date | date: "%b %d, %Y" }}</h4>
+    </article>
+{% endfor %}
