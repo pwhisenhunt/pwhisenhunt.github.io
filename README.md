@@ -1,6 +1,6 @@
 pwhisenhunt.github.com
 ======================
-This is the repo of my personal website pwhisenhunt.com.
+This is the repo for my personal website pwhisenhunt.com.
 
 This website uses jekyll, Grunt.js, SASS, and a bunch of other open source technologies. Feel free to fork it and use it as your own personal site.
 
