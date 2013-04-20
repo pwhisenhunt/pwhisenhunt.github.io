@@ -21,6 +21,10 @@ body > .container { height: auto; min-height: 100%; }
 
     .container-fluid {
         padding:0;
+
+        .span9 {
+            padding:15px;
+        }
     }
 }
 
