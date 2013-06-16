@@ -15,6 +15,7 @@ body > .container { height: auto; min-height: 100%; }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+
     body {
         padding:0;
     }
@@ -29,6 +30,7 @@ body > .container { height: auto; min-height: 100%; }
 }
 
 .span9 {
+
     .span4 {
         margin:0;
         margin-left:0;
@@ -69,9 +71,14 @@ a:hover {
 }
 
 article {
+
     h4 {
         color: $color-accent;
     }
+}
+
+.about {
+    padding-left: 15px;
 }
 
 .sidebar {
@@ -117,7 +124,9 @@ article {
         @include border-radius(0px);
     }
 
-    img {
+    .icon {
+        width: 32px;
+        height: 32px;
         @include transition-property(rotate);
         @include transition-duration(0.25s);
         @include rotate(0deg);
@@ -128,7 +137,7 @@ article {
         margin-right:auto;
     }
 
-    img:hover {
+    .icon:hover {
         @include rotate(20deg);
     }
 
