@@ -9,6 +9,3 @@ After forking, cd into the project directory and run: npm install
 To build the assets run: grunt
 
 And to see the site locally run: jekyll --server
-
-TODO:
-Sprite images.
