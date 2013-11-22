@@ -11,9 +11,8 @@ module.exports = function(grunt) {
     concat: {
       css: {
         src: [
+          'css/bootstrap.min.css',
           'css/normalize.css',
-          'css/bootstrap.min.css', 
-          'css/bootstrap-responsive.min.css',
           'css/main.css'
         ],
         dest: 'css/main.concat.css'
@@ -25,11 +24,21 @@ module.exports = function(grunt) {
         dest: 'css/main.min.css'
       }
     },
+    watch: {
+      scripts: {
+        files: ['js/*.js', 'scss/*.scss'],
+        tasks: ['default'],
+        options: {
+          spawn: false,
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks('grunt-css');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['compass', 'concat', 'cssmin']);
-}
+};

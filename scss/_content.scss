@@ -1,61 +1,27 @@
 body {
-    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+    font-family: Georgia, Times, "Times New Roman", serif;
     font-size:16px;
-    text-align:justify;
-    background-color: $color-bg;
+    line-height: 1.5em;
     color: $color-primary;
+    text-align: justify;
 }
 
-html, body, #container { height: 100%; }
-body > .container { height: auto; min-height: 100%; }
-
-.container-fluid {
-    padding-left:0;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Georgia, Times, "Times New Roman", serif;    
 }
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
 
-    body {
-        padding:0;
+.navbar {
+    background: none;
+    border: none;
+
+    .navbar-nav>li>a {
+        background: none;
+        color: $color-accent;
     }
-
-    .container-fluid {
-        padding:0;
-
-        .span9 {
-            padding:15px;
-        }
+    .navbar-nav>li.active>a, .navbar-nav>li.active>a:hover {
+        background: none;
+        color: $color-primary;
     }
-}
-
-.span9 {
-
-    .span4 {
-        margin:0;
-        margin-left:0;
-    }
-}
-
-.note {
-    color: red;
-}
-
-.date {
-    color: #ccc;
-}
-
-p {
-    line-height: 1.8em;
-}
-
-.top-separate {
-    border-top: 1px solid #ccc;
-}
-
-h1 {
-    color: $color-accent;
-    font-size:36px;
 }
 
 a {
@@ -68,155 +34,45 @@ a {
 a:hover {
     text-decoration:none;
     color: $color-primary;
+}  
+
+img.profile {
+    @include transition-property(rotate);
+    @include transition-duration(0.25s);
+    @include rotate(0deg);
+    @include border-radius(100px);
+    padding:0;
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-article {
-
-    h4 {
-        color: $color-accent;
-    }
+img.profile:hover {
+    @include rotate(20deg);
+    @include border-radius(0px);
 }
 
-.about {
-    padding-left: 15px;
+.icon {
+    width: 32px;
+    height: 32px;
+    @include transition-property(rotate);
+    @include transition-duration(0.25s);
+    @include rotate(0deg);
+    padding:0;
+    text-align:center;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-.sidebar {
-    @include background-image(linear-gradient($color-accent 85%, $color-bg));
-    color:$color-bg;
+.icon:hover {
+    @include rotate(20deg);
+}
 
-    .row {
-        padding:20px;
-        padding-bottom:0;
-        margin:0;
-
-        &.border {
-            padding-bottom:20px;
-            border-bottom:1px solid white;
-        }
-    }
-
-    .row:last-child {
-        padding-bottom:75px;
-    }
-
-    .copy {
-        font-size: 12px;
-        text-align:center;
-        color: #ccc;
-        display:block;
-    }
-
-    img.profile {
-        @include transition-property(rotate);
-        @include transition-duration(0.25s);
-        @include rotate(0deg);
-        @include border-radius(100px);
-        padding:0;
-        text-align:center;
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    img.profile:hover {
-        @include rotate(20deg);
-        @include border-radius(0px);
-    }
-
-    .icon {
-        width: 32px;
-        height: 32px;
-        @include transition-property(rotate);
-        @include transition-duration(0.25s);
-        @include rotate(0deg);
-        padding:0;
-        text-align:center;
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .icon:hover {
-        @include rotate(20deg);
-    }
-
-    a:hover {
-        text-decoration:none;
-        color: $color-primary;
-    }
-
-    h1 {
-        text-align:center;
-        margin:0;
-
-        a:hover {
-            color:$color-primary;
-        }
-    }
-
-    .span4 {
-        margin-left:0;
-    }
-
-    a {
-        color: #ccc;
-        @include transition-property(color);
-        @include transition-duration(all 2s linear);
-        text-decoration:none;
-
-        &.home {
-            color:$color-bg;
-        }
-    }
-
-    a:hover {
-       color: $color-bg;
-    }
-
-    p {
-        margin:0;
-    }
-
-    ul.connect {
-        margin:0;
-        padding:0;
-
-        li {
-            display:inline;
-            margin-top:0;
-        }
-    }
-
-    ul {
-        margin:auto;
-        padding:0;
-        list-style-type: none;
-
-        li {
-            margin-top:10px;
-
-            &:first-child {
-                margin-top:0;
-            }
-
-            &.active {
-                a {
-                    color:$color-bg;
-                }
-            } 
-            a {
-                font-size:16px;
-                text-align:center;
-                display:block;
-
-                img {
-                    width:30px;
-                }
-            }
-        }
-        li:fist-child {
-            padding-left:0;
-        }
-    }
+footer {
+    font-size:14px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-align: center;
 }

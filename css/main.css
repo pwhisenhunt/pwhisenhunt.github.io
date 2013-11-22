@@ -3,98 +3,55 @@
   background: url('/images/icons-sd514498506.png') no-repeat;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-github {
   background-position: 0 0;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-linkedin {
   background-position: 0 -62px;
 }
 
-/* line 60, ../../../../../.rvm/gems/ruby-1.9.3-p327/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 60, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter {
   background-position: 0 -31px;
 }
 
 /* line 1, ../scss/_content.scss */
 body {
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
-  text-align: justify;
-  background-color: white;
+  line-height: 1.5em;
   color: #333333;
+  text-align: justify;
 }
 
 /* line 9, ../scss/_content.scss */
-html, body, #container {
-  height: 100%;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-/* line 10, ../scss/_content.scss */
-body > .container {
-  height: auto;
-  min-height: 100%;
+/* line 13, ../scss/_content.scss */
+.navbar {
+  background: none;
+  border: none;
+}
+/* line 17, ../scss/_content.scss */
+.navbar .navbar-nav > li > a {
+  background: none;
+  color: #00b957;
+}
+/* line 21, ../scss/_content.scss */
+.navbar .navbar-nav > li.active > a, .navbar .navbar-nav > li.active > a:hover {
+  background: none;
+  color: #333333;
 }
 
-/* line 12, ../scss/_content.scss */
-.container-fluid {
-  padding-left: 0;
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  /* line 19, ../scss/_content.scss */
-  body {
-    padding: 0;
-  }
-
-  /* line 23, ../scss/_content.scss */
-  .container-fluid {
-    padding: 0;
-  }
-  /* line 26, ../scss/_content.scss */
-  .container-fluid .span9 {
-    padding: 15px;
-  }
-}
-/* line 34, ../scss/_content.scss */
-.span9 .span4 {
-  margin: 0;
-  margin-left: 0;
-}
-
-/* line 40, ../scss/_content.scss */
-.note {
-  color: red;
-}
-
-/* line 44, ../scss/_content.scss */
-.date {
-  color: #ccc;
-}
-
-/* line 48, ../scss/_content.scss */
-p {
-  line-height: 1.8em;
-}
-
-/* line 52, ../scss/_content.scss */
-.top-separate {
-  border-top: 1px solid #ccc;
-}
-
-/* line 56, ../scss/_content.scss */
-h1 {
-  color: #098ade;
-  font-size: 36px;
-}
-
-/* line 61, ../scss/_content.scss */
+/* line 27, ../scss/_content.scss */
 a {
   text-decoration: none;
-  color: #098ade;
+  color: #00b957;
   -webkit-transition-property: color;
   -moz-transition-property: color;
   -o-transition-property: color;
@@ -105,55 +62,14 @@ a {
   transition-duration: all 2s linear;
 }
 
-/* line 68, ../scss/_content.scss */
+/* line 34, ../scss/_content.scss */
 a:hover {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 75, ../scss/_content.scss */
-article h4 {
-  color: #098ade;
-}
-
-/* line 80, ../scss/_content.scss */
-.about {
-  padding-left: 15px;
-}
-
-/* line 84, ../scss/_content.scss */
-.sidebar {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(85%, #098ade), color-stop(100%, #ffffff));
-  background-image: -webkit-linear-gradient(#098ade 85%, #ffffff);
-  background-image: -moz-linear-gradient(#098ade 85%, #ffffff);
-  background-image: -o-linear-gradient(#098ade 85%, #ffffff);
-  background-image: linear-gradient(#098ade 85%, #ffffff);
-  color: white;
-}
-/* line 88, ../scss/_content.scss */
-.sidebar .row {
-  padding: 20px;
-  padding-bottom: 0;
-  margin: 0;
-}
-/* line 93, ../scss/_content.scss */
-.sidebar .row.border {
-  padding-bottom: 20px;
-  border-bottom: 1px solid white;
-}
-/* line 99, ../scss/_content.scss */
-.sidebar .row:last-child {
-  padding-bottom: 75px;
-}
-/* line 103, ../scss/_content.scss */
-.sidebar .copy {
-  font-size: 12px;
-  text-align: center;
-  color: #ccc;
-  display: block;
-}
-/* line 110, ../scss/_content.scss */
-.sidebar img.profile {
+/* line 39, ../scss/_content.scss */
+img.profile {
   -webkit-transition-property: rotate;
   -moz-transition-property: rotate;
   -o-transition-property: rotate;
@@ -178,8 +94,9 @@ article h4 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 122, ../scss/_content.scss */
-.sidebar img.profile:hover {
+
+/* line 51, ../scss/_content.scss */
+img.profile:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
@@ -191,8 +108,9 @@ article h4 {
   -o-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 127, ../scss/_content.scss */
-.sidebar .icon {
+
+/* line 56, ../scss/_content.scss */
+.icon {
   width: 32px;
   height: 32px;
   -webkit-transition-property: rotate;
@@ -214,98 +132,22 @@ article h4 {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 140, ../scss/_content.scss */
-.sidebar .icon:hover {
+
+/* line 69, ../scss/_content.scss */
+.icon:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   -o-transform: rotate(20deg);
   transform: rotate(20deg);
 }
-/* line 144, ../scss/_content.scss */
-.sidebar a:hover {
-  text-decoration: none;
-  color: #333333;
-}
-/* line 149, ../scss/_content.scss */
-.sidebar h1 {
+
+/* line 73, ../scss/_content.scss */
+footer {
+  font-size: 14px;
+  margin-bottom: 25px;
+  margin-top: 50px;
   text-align: center;
-  margin: 0;
-}
-/* line 153, ../scss/_content.scss */
-.sidebar h1 a:hover {
-  color: #333333;
-}
-/* line 158, ../scss/_content.scss */
-.sidebar .span4 {
-  margin-left: 0;
-}
-/* line 162, ../scss/_content.scss */
-.sidebar a {
-  color: #ccc;
-  -webkit-transition-property: color;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: all 2s linear;
-  -moz-transition-duration: all 2s linear;
-  -o-transition-duration: all 2s linear;
-  transition-duration: all 2s linear;
-  text-decoration: none;
-}
-/* line 168, ../scss/_content.scss */
-.sidebar a.home {
-  color: white;
-}
-/* line 173, ../scss/_content.scss */
-.sidebar a:hover {
-  color: white;
-}
-/* line 177, ../scss/_content.scss */
-.sidebar p {
-  margin: 0;
-}
-/* line 181, ../scss/_content.scss */
-.sidebar ul.connect {
-  margin: 0;
-  padding: 0;
-}
-/* line 185, ../scss/_content.scss */
-.sidebar ul.connect li {
-  display: inline;
-  margin-top: 0;
-}
-/* line 191, ../scss/_content.scss */
-.sidebar ul {
-  margin: auto;
-  padding: 0;
-  list-style-type: none;
-}
-/* line 196, ../scss/_content.scss */
-.sidebar ul li {
-  margin-top: 10px;
-}
-/* line 199, ../scss/_content.scss */
-.sidebar ul li:first-child {
-  margin-top: 0;
-}
-/* line 204, ../scss/_content.scss */
-.sidebar ul li.active a {
-  color: white;
-}
-/* line 208, ../scss/_content.scss */
-.sidebar ul li a {
-  font-size: 16px;
-  text-align: center;
-  display: block;
-}
-/* line 213, ../scss/_content.scss */
-.sidebar ul li a img {
-  width: 30px;
-}
-/* line 218, ../scss/_content.scss */
-.sidebar ul li:fist-child {
-  padding-left: 0;
 }
 
 /* line 1, ../scss/_default.scss */

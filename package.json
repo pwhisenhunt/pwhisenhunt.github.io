@@ -5,6 +5,7 @@
     "grunt": "~0.4.1",
     "grunt-css": "",
     "grunt-contrib-concat": "",
-    "grunt-contrib-compass": ""
+    "grunt-contrib-compass": "",
+    "grunt-contrib-watch": ""
   }
 }

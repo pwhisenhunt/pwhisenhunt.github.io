@@ -13,37 +13,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.author.name }} | Thoughts on Software Development and Life</title>
         <link href="/css/main.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container-fluid">
-            <div class="row-fluid">
-                <div class="span3 sidebar">
-                    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span>
                         <a href="/" alt="pwhisenhunt.com Home">
-                            <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" class="profile"/>
+                            <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" class="profile pull-left"/>
                         </a>
-                    </div>
+                        <a href="/" alt="phillipwhisenhunt.com Home">
+                            <h1>{{ site.author.name }}</h1>
+                        </a>
+                    </span>
+                </div>
+            </div>
 
-                    <div class="row">
-                        <h1>
-                            <a class="home" href="/" alt="phillipwhisenhunt.com Home">
-                                {{ site.author.name }}
-                            </a>
-                        </h1>
-                    </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default" role="navigation">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                      </div>
 
-                    <div class="row border">
-                        <p>
-                            Hi! I'm a software engineer and entrepreneur living and playing in beautiful <a href="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=austin+tx&aq=&sll=30.266917,-97.734703&sspn=0.022647,0.02223&vpsrc=0&ie=UTF8&hq=&hnear=Austin,+Travis,+Texas&t=m&z=10" alt="Austin, Texas">Austin, TX</a>. I love mountain biking, yoga, fresh juice, anything outside, and long coding sessions while listening to techno. This is my place on the web where I write about software and life.
-                        </p>
-                    </div>
-
-                    <div class="row border">
-                        <ul>
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
                             <li {% if page.active == "articles" %} class="active" {% endif %}>
                                 <a href="/">Articles</a>
                             </li>
@@ -57,38 +62,29 @@
                                 <a href="/about">About</a>
                             </li>
                         </ul>
-                    </div>
-
-                    <div class="row border">
-                        <ul class="connect">
-                            <li>
-                                <a href="http://www.twitter.com/{{ site.author.twitter }}" alt="{{ site.author.name }} twitter" class="icons-twitter icon"></a>
-                            </li>
-                            <li>
-                                <a href="http://www.github.com/{{ site.author.github }}" alt="{{ site.author.name }} github" class="icons-github icon">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.linkedin.com/in/{{ site.author.linkedin }}" alt="{{ site.author.name }} linkedin" class="icons-linkedin icon">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="row">
-                        <p class="copy">
-                            <a href="https://github.com/pwhisenhunt/pwhisenhunt.github.com" alt="{{ site.author.name }} Website Repository">
-                                    Fork This Website!
-                                </a>This website was built using awesome open source projects <a href="https://github.com/mojombo/jekyll" alt="Jekyll">Jekyll</a>, <a href="http://twitter.github.com/bootstrap/" alt="Twitter Bootstrap">Twitter Bootstrap</a>, <a href="http://gruntjs.com/" alt="Grunt.js">Grunt.js</a>, <a href="http://sass-lang.com/" alt="SASS">SASS</a>, and <a href="http://html5boilerplate.com/" alt="HTML5 Boilerplate">HTML5 Boilerplate</a>.
-                            This website does not reflect the opinions of my past or present employers.
-                        </p>
-                    </div>
+                      </div><!-- /.navbar-collapse -->
+                    </nav>
                 </div>
-                <div class="span9">
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>{{ page.title }}</h2>
                     {{ content }}
                 </div>
             </div>
+
+            <footer class="row">
+                <div class="col-md-12"> 
+                    <a href="https://github.com/pwhisenhunt/pwhisenhunt.github.com" alt="{{ site.author.name }} Website Repository">
+                    Fork This Website!
+                    </a>This website was built using awesome open source projects <a href="https://github.com/mojombo/jekyll" alt="Jekyll">Jekyll</a>, <a href="http://twitter.github.com/bootstrap/" alt="Twitter Bootstrap">Twitter Bootstrap</a>, <a href="http://gruntjs.com/" alt="Grunt.js">Grunt.js</a>, <a href="http://sass-lang.com/" alt="SASS">SASS</a>, and <a href="http://html5boilerplate.com/" alt="HTML5 Boilerplate">HTML5 Boilerplate</a>.
+                    This website does not reflect the opinions of my past or present employers.
+                </div>
+            </div>
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="/js/application.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>
