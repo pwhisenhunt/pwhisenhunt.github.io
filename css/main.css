@@ -22,26 +22,41 @@
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 16px;
-  line-height: 1.5em;
   color: #333333;
 }
 
-/* line 8, ../scss/_content.scss */
+/* line 7, ../scss/_content.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 /* line 12, ../scss/_content.scss */
+article h3 {
+  margin-bottom: 0;
+}
+/* line 15, ../scss/_content.scss */
+article p {
+  margin-top: 0;
+}
+
+/* line 20, ../scss/_content.scss */
 .navbar {
   background: none;
   border: none;
   margin-bottom: 0;
 }
-/* line 17, ../scss/_content.scss */
+/* line 25, ../scss/_content.scss */
 .navbar .navbar-collapse {
   padding: 0;
 }
-/* line 21, ../scss/_content.scss */
+/* line 29, ../scss/_content.scss */
+.navbar .navbar-nav {
+  float: none;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+}
+/* line 36, ../scss/_content.scss */
 .navbar .navbar-nav > li > a {
   background: none;
   text-decoration: none;
@@ -55,13 +70,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -o-transition-duration: all 2s linear;
   transition-duration: all 2s linear;
 }
-/* line 28, ../scss/_content.scss */
+/* line 43, ../scss/_content.scss */
 .navbar .navbar-nav > li.active > a, .navbar .navbar-nav > li.active > a:hover {
   background: none;
   color: #333333;
 }
 
-/* line 34, ../scss/_content.scss */
+/* line 49, ../scss/_content.scss */
 a {
   text-decoration: none;
   color: #00b957;
@@ -75,13 +90,13 @@ a {
   transition-duration: all 2s linear;
 }
 
-/* line 41, ../scss/_content.scss */
+/* line 56, ../scss/_content.scss */
 a:hover {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 46, ../scss/_content.scss */
+/* line 61, ../scss/_content.scss */
 img.profile {
   -webkit-transition-property: rotate;
   -moz-transition-property: rotate;
@@ -108,7 +123,7 @@ img.profile {
   margin-right: auto;
 }
 
-/* line 58, ../scss/_content.scss */
+/* line 73, ../scss/_content.scss */
 img.profile:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -122,7 +137,7 @@ img.profile:hover {
   border-radius: 0px;
 }
 
-/* line 63, ../scss/_content.scss */
+/* line 78, ../scss/_content.scss */
 .icon {
   width: 32px;
   height: 32px;
@@ -146,7 +161,7 @@ img.profile:hover {
   margin-right: auto;
 }
 
-/* line 76, ../scss/_content.scss */
+/* line 91, ../scss/_content.scss */
 .icon:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -155,14 +170,33 @@ img.profile:hover {
   transform: rotate(20deg);
 }
 
-/* line 80, ../scss/_content.scss */
+/* line 95, ../scss/_content.scss */
 footer {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 25px;
   margin-top: 50px;
   text-align: center;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  /* line 104, ../scss/_content.scss */
+  p, blockquote {
+    line-height: 27px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 110, ../scss/_content.scss */
+  p, blockquote {
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 116, ../scss/_content.scss */
+  p, blockquote {
+    line-height: 30px;
+  }
+}
 /* line 1, ../scss/_default.scss */
 .hll {
   background-color: #ffffcc;

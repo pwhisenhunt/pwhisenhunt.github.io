@@ -5,11 +5,10 @@ title: Articles
 ---
 {% for post in site.posts %}
     <article>
-        <h3><a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title }}</a></h3>
+            <h3><a href="{{ post.url }}" alt="{{ post.title }}">{{ post.title }}</a><em class="pull-right">{{ post.date | date: "%b %d, %Y" }}</em></h3>
         {% if post.img %}<img src="{{ post.img }}" />{% endif %}
         <p>
             {{ post.caption }}
         </p>
-        <em>{{ post.date | date: "%b %d, %Y" }}</em>
     </article>
 {% endfor %}
