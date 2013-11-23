@@ -6,6 +6,7 @@
     "grunt-css": "",
     "grunt-contrib-concat": "",
     "grunt-contrib-compass": "",
-    "grunt-contrib-watch": ""
+    "grunt-contrib-watch": "",
+    "grunt-contrib-uglify": ""
   }
 }

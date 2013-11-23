@@ -24,31 +24,44 @@ body {
   font-size: 16px;
   line-height: 1.5em;
   color: #333333;
-  text-align: justify;
 }
 
-/* line 9, ../scss/_content.scss */
+/* line 8, ../scss/_content.scss */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-/* line 13, ../scss/_content.scss */
+/* line 12, ../scss/_content.scss */
 .navbar {
   background: none;
   border: none;
+  margin-bottom: 0;
 }
 /* line 17, ../scss/_content.scss */
-.navbar .navbar-nav > li > a {
-  background: none;
-  color: #00b957;
+.navbar .navbar-collapse {
+  padding: 0;
 }
 /* line 21, ../scss/_content.scss */
+.navbar .navbar-nav > li > a {
+  background: none;
+  text-decoration: none;
+  color: #00b957;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: all 2s linear;
+  -moz-transition-duration: all 2s linear;
+  -o-transition-duration: all 2s linear;
+  transition-duration: all 2s linear;
+}
+/* line 28, ../scss/_content.scss */
 .navbar .navbar-nav > li.active > a, .navbar .navbar-nav > li.active > a:hover {
   background: none;
   color: #333333;
 }
 
-/* line 27, ../scss/_content.scss */
+/* line 34, ../scss/_content.scss */
 a {
   text-decoration: none;
   color: #00b957;
@@ -62,13 +75,13 @@ a {
   transition-duration: all 2s linear;
 }
 
-/* line 34, ../scss/_content.scss */
+/* line 41, ../scss/_content.scss */
 a:hover {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 39, ../scss/_content.scss */
+/* line 46, ../scss/_content.scss */
 img.profile {
   -webkit-transition-property: rotate;
   -moz-transition-property: rotate;
@@ -95,7 +108,7 @@ img.profile {
   margin-right: auto;
 }
 
-/* line 51, ../scss/_content.scss */
+/* line 58, ../scss/_content.scss */
 img.profile:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -109,7 +122,7 @@ img.profile:hover {
   border-radius: 0px;
 }
 
-/* line 56, ../scss/_content.scss */
+/* line 63, ../scss/_content.scss */
 .icon {
   width: 32px;
   height: 32px;
@@ -133,7 +146,7 @@ img.profile:hover {
   margin-right: auto;
 }
 
-/* line 69, ../scss/_content.scss */
+/* line 76, ../scss/_content.scss */
 .icon:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -142,7 +155,7 @@ img.profile:hover {
   transform: rotate(20deg);
 }
 
-/* line 73, ../scss/_content.scss */
+/* line 80, ../scss/_content.scss */
 footer {
   font-size: 14px;
   margin-bottom: 25px;

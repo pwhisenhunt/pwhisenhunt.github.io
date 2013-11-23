@@ -24,6 +24,13 @@ module.exports = function(grunt) {
         dest: 'css/main.min.css'
       }
     },
+    uglify: {
+      js: {
+        files: {
+          'js/main.min.js': ['js/jquery.min.js', 'js/bootstrap.min.js', 'js/application.js']
+        }
+      }
+    },
     watch: {
       scripts: {
         files: ['js/*.js', 'scss/*.scss'],
@@ -39,6 +46,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['compass', 'concat', 'cssmin']);
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  
+  grunt.registerTask('default', ['compass', 'concat', 'cssmin', 'uglify']);
 };
