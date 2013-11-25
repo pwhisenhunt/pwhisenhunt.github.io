@@ -21,7 +21,7 @@
 /* line 1, ../scss/_content.scss */
 body {
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #333333;
 }
 
@@ -40,23 +40,34 @@ article p {
 }
 
 /* line 20, ../scss/_content.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 24, ../scss/_content.scss */
+img {
+  padding: 15px;
+}
+
+/* line 28, ../scss/_content.scss */
 .navbar {
   background: none;
   border: none;
   margin-bottom: 0;
+  font-size: 19px;
 }
-/* line 25, ../scss/_content.scss */
+/* line 35, ../scss/_content.scss */
 .navbar .navbar-collapse {
   padding: 0;
 }
-/* line 29, ../scss/_content.scss */
+/* line 39, ../scss/_content.scss */
 .navbar .navbar-nav {
   float: none;
   margin: 0 auto;
   display: table;
   table-layout: fixed;
 }
-/* line 36, ../scss/_content.scss */
+/* line 46, ../scss/_content.scss */
 .navbar .navbar-nav > li > a {
   background: none;
   text-decoration: none;
@@ -70,13 +81,13 @@ article p {
   -o-transition-duration: all 2s linear;
   transition-duration: all 2s linear;
 }
-/* line 43, ../scss/_content.scss */
+/* line 53, ../scss/_content.scss */
 .navbar .navbar-nav > li.active > a, .navbar .navbar-nav > li.active > a:hover {
   background: none;
   color: #333333;
 }
 
-/* line 49, ../scss/_content.scss */
+/* line 59, ../scss/_content.scss */
 a {
   text-decoration: none;
   color: #00b957;
@@ -90,54 +101,13 @@ a {
   transition-duration: all 2s linear;
 }
 
-/* line 56, ../scss/_content.scss */
+/* line 66, ../scss/_content.scss */
 a:hover {
   text-decoration: none;
   color: #333333;
 }
 
-/* line 61, ../scss/_content.scss */
-img.profile {
-  -webkit-transition-property: rotate;
-  -moz-transition-property: rotate;
-  -o-transition-property: rotate;
-  transition-property: rotate;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  border-radius: 100px;
-  padding: 0;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 73, ../scss/_content.scss */
-img.profile:hover {
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
-  border-radius: 0px;
-}
-
-/* line 78, ../scss/_content.scss */
+/* line 71, ../scss/_content.scss */
 .icon {
   width: 32px;
   height: 32px;
@@ -161,7 +131,7 @@ img.profile:hover {
   margin-right: auto;
 }
 
-/* line 91, ../scss/_content.scss */
+/* line 84, ../scss/_content.scss */
 .icon:hover {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -170,29 +140,34 @@ img.profile:hover {
   transform: rotate(20deg);
 }
 
-/* line 95, ../scss/_content.scss */
+/* line 88, ../scss/_content.scss */
 footer {
+  color: #cccccc;
   font-size: 13px;
   margin-bottom: 25px;
   margin-top: 50px;
   text-align: center;
 }
+/* line 95, ../scss/_content.scss */
+footer a {
+  color: #cccccc;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* line 104, ../scss/_content.scss */
+  /* line 102, ../scss/_content.scss */
   p, blockquote {
     line-height: 27px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 110, ../scss/_content.scss */
+  /* line 108, ../scss/_content.scss */
   p, blockquote {
     line-height: 28px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 116, ../scss/_content.scss */
+  /* line 114, ../scss/_content.scss */
   p, blockquote {
     line-height: 30px;
   }

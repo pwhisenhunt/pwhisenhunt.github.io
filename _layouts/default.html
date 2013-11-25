@@ -22,8 +22,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <a href="/" alt="pwhisenhunt.com Home">
-                        <img src="{{ site.author.gravatar }}" alt="{{ site.author.name }}" class="profile pull-left"/>
-                        <h1>{{ site.author.name }}</h1>
+                        <h1>PHILLIP WHISENHUNT</h1>
                     </a>
                 </div>
             </div>
@@ -55,8 +54,8 @@
                                 <li {% if page.active == "about" %} class="active" {% endif %}>
                                     <a href="/about">About</a>
                                 </li>
-                                <li>
-                                    <a href="//github.com/{{ site.author.github }}" target="_blank" alt="{{ site.author.name }} Github">Github</a>
+                                <li {% if page.active == "contact" %} class="active" {% endif %}>
+                                    <a href="/contact">Contact</a>
                                 </li>
                             </ul>
                         </div><!-- /.navbar-collapse -->
@@ -73,10 +72,12 @@
 
             <footer class="row">
                 <div class="col-md-12"> 
-                    <a href="https://github.com/pwhisenhunt/pwhisenhunt.github.com" alt="{{ site.author.name }} Website Repository">
-                    Fork This Website!
-                    </a>This website was built using awesome open source projects <a href="https://github.com/mojombo/jekyll" alt="Jekyll">Jekyll</a>, <a href="http://getbootstrap.com/" alt="Twitter Bootstrap">Twitter Bootstrap</a>, <a href="http://gruntjs.com/" alt="Grunt.js">Grunt.js</a>, <a href="http://sass-lang.com/" alt="SASS">SASS</a>, and <a href="http://html5boilerplate.com/" alt="HTML5 Boilerplate">HTML5 Boilerplate</a>.
-                    This website does not reflect the opinions of my past or present employers.
+                    <p>
+                        <a href="https://github.com/pwhisenhunt/pwhisenhunt.github.com" alt="{{ site.author.name }} Website Repository">
+                        Fork This Website!
+                        </a>This website was built using awesome open source projects <a href="https://github.com/mojombo/jekyll" alt="Jekyll">Jekyll</a>, <a href="http://getbootstrap.com/" alt="Twitter Bootstrap">Twitter Bootstrap</a>, <a href="http://gruntjs.com/" alt="Grunt.js">Grunt.js</a>, <a href="http://sass-lang.com/" alt="SASS">SASS</a>, and <a href="http://html5boilerplate.com/" alt="HTML5 Boilerplate">HTML5 Boilerplate</a>.
+                        This website does not reflect the opinions of my past or present employers.
+                    </p>
                 </div>
             </div>
         </div>

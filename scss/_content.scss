@@ -1,11 +1,11 @@
 body {
     font-family: Georgia, Times, "Times New Roman", serif;
-    font-size:16px;
+    font-size:15px;
     color: $color-primary;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: Georgia, Times, "Times New Roman", serif;    
+    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 article {
@@ -17,10 +17,20 @@ article {
     }
 }
 
+h1 {
+    text-align: center;
+}
+
+img {
+    padding: 15px;
+}
+
 .navbar {
     background: none;
     border: none;
     margin-bottom: 0;
+
+    font-size:19px;
 
     .navbar-collapse {
         padding: 0;
@@ -58,23 +68,6 @@ a:hover {
     color: $color-primary;
 }  
 
-img.profile {
-    @include transition-property(rotate);
-    @include transition-duration(0.25s);
-    @include rotate(0deg);
-    @include border-radius(100px);
-    padding:0;
-    text-align:center;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-img.profile:hover {
-    @include rotate(20deg);
-    @include border-radius(0px);
-}
-
 .icon {
     width: 32px;
     height: 32px;
@@ -93,10 +86,15 @@ img.profile:hover {
 }
 
 footer {
+    color: $color-light;
     font-size:13px;
     margin-bottom: 25px;
     margin-top: 50px;
     text-align: center;
+
+    a {
+        color: $color-light;        
+    }
 }
 
 /* Small devices (tablets, 768px and up) */
