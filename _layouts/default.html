@@ -21,9 +21,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/" alt="pwhisenhunt.com Home">
-                        <h1>PHILLIP WHISENHUNT</h1>
-                    </a>
                 </div>
             </div>
 
@@ -41,7 +38,14 @@
                         </div>
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li class="navbar-left">
+                                    <a href="/" alt="pwhisenhunt.com Home">
+                                        <h1>{{ site.author.name }}</h1>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
                                 <li {% if page.active == "articles" %} class="active" {% endif %}>
                                     <a href="/">Articles</a>
                                 </li>

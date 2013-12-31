@@ -1,11 +1,5 @@
 body {
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size:15px;
     color: $color-primary;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 article {
@@ -17,10 +11,6 @@ article {
     }
 }
 
-h1 {
-    text-align: center;
-}
-
 img {
     padding: 15px;
 }
@@ -30,7 +20,9 @@ img {
     border: none;
     margin-bottom: 0;
 
-    font-size:19px;
+    h1 {
+        margin: 0;
+    }
 
     .navbar-collapse {
         padding: 0;
