@@ -512,29 +512,9 @@ table {
     border-spacing: 0;
 }
 
-/* line 58, icons/*.png */
-.icons-sprite, .icons-github, .icons-linkedin, .icons-twitter {
-  background: url('/images/icons-sd514498506.png') no-repeat;
-}
-
-/* line 60, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-github {
-  background-position: 0 0;
-}
-
-/* line 60, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-linkedin {
-  background-position: 0 -62px;
-}
-
-/* line 60, ../../../.rvm/gems/ruby-1.9.3-p448/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-twitter {
-  background-position: 0 -31px;
-}
-
 /* line 1, ../scss/_content.scss */
 body {
-  color: #333333;
+  color: #333;
 }
 
 /* line 6, ../scss/_content.scss */
@@ -552,514 +532,54 @@ img {
 }
 
 /* line 18, ../scss/_content.scss */
-.navbar {
-  background: none;
-  border: none;
-  margin-bottom: 0;
-}
-/* line 23, ../scss/_content.scss */
-.navbar h1 {
-  margin: 0;
-}
-/* line 27, ../scss/_content.scss */
-.navbar .navbar-collapse {
-  padding: 0;
-}
-/* line 31, ../scss/_content.scss */
-.navbar .navbar-nav {
-  float: none;
-  margin: 0 auto;
-  display: table;
-  table-layout: fixed;
-}
-/* line 38, ../scss/_content.scss */
-.navbar .navbar-nav > li > a {
-  background: none;
-  text-decoration: none;
-  color: #00b957;
-  -webkit-transition-property: color;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: all 2s linear;
-  -moz-transition-duration: all 2s linear;
-  -o-transition-duration: all 2s linear;
-  transition-duration: all 2s linear;
-}
-/* line 45, ../scss/_content.scss */
-.navbar .navbar-nav > li.active > a, .navbar .navbar-nav > li.active > a:hover {
-  background: none;
-  color: #333333;
-}
-
-/* line 51, ../scss/_content.scss */
 a {
   text-decoration: none;
   color: #00b957;
-  -webkit-transition-property: color;
   -moz-transition-property: color;
   -o-transition-property: color;
+  -webkit-transition-property: color;
   transition-property: color;
-  -webkit-transition-duration: all 2s linear;
   -moz-transition-duration: all 2s linear;
   -o-transition-duration: all 2s linear;
+  -webkit-transition-duration: all 2s linear;
   transition-duration: all 2s linear;
 }
 
-/* line 58, ../scss/_content.scss */
+/* line 25, ../scss/_content.scss */
 a:hover {
   text-decoration: none;
-  color: #333333;
+  color: #333;
 }
 
-/* line 63, ../scss/_content.scss */
-.icon {
-  width: 32px;
-  height: 32px;
-  -webkit-transition-property: rotate;
-  -moz-transition-property: rotate;
-  -o-transition-property: rotate;
-  transition-property: rotate;
-  -webkit-transition-duration: 0.25s;
-  -moz-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  padding: 0;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 76, ../scss/_content.scss */
-.icon:hover {
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-}
-
-/* line 80, ../scss/_content.scss */
+/* line 30, ../scss/_content.scss */
 footer {
-  color: #cccccc;
+  color: #CCC;
   font-size: 13px;
   margin-bottom: 25px;
   margin-top: 50px;
   text-align: center;
 }
-/* line 87, ../scss/_content.scss */
+/* line 37, ../scss/_content.scss */
 footer a {
-  color: #cccccc;
+  color: #CCC;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* line 94, ../scss/_content.scss */
+  /* line 44, ../scss/_content.scss */
   p, blockquote {
     line-height: 27px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 100, ../scss/_content.scss */
+  /* line 50, ../scss/_content.scss */
   p, blockquote {
     line-height: 28px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 106, ../scss/_content.scss */
+  /* line 56, ../scss/_content.scss */
   p, blockquote {
     line-height: 30px;
   }
 }
-/* line 1, ../scss/_default.scss */
-.hll {
-  background-color: #ffffcc;
-}
-
-/* line 2, ../scss/_default.scss */
-.c {
-  color: #408080;
-  font-style: italic;
-}
-
-/* Comment */
-/* line 3, ../scss/_default.scss */
-.err {
-  border: 1px solid red;
-}
-
-/* Error */
-/* line 4, ../scss/_default.scss */
-.k {
-  color: #008000;
-  font-weight: bold;
-}
-
-/* Keyword */
-/* line 5, ../scss/_default.scss */
-.o {
-  color: #666666;
-}
-
-/* Operator */
-/* line 6, ../scss/_default.scss */
-.cm {
-  color: #408080;
-  font-style: italic;
-}
-
-/* Comment.Multiline */
-/* line 7, ../scss/_default.scss */
-.cp {
-  color: #bc7a00;
-}
-
-/* Comment.Preproc */
-/* line 8, ../scss/_default.scss */
-.c1 {
-  color: #408080;
-  font-style: italic;
-}
-
-/* Comment.Single */
-/* line 9, ../scss/_default.scss */
-.cs {
-  color: #408080;
-  font-style: italic;
-}
-
-/* Comment.Special */
-/* line 10, ../scss/_default.scss */
-.gd {
-  color: #a00000;
-}
-
-/* Generic.Deleted */
-/* line 11, ../scss/_default.scss */
-.ge {
-  font-style: italic;
-}
-
-/* Generic.Emph */
-/* line 12, ../scss/_default.scss */
-.gr {
-  color: red;
-}
-
-/* Generic.Error */
-/* line 13, ../scss/_default.scss */
-.gh {
-  color: #000080;
-  font-weight: bold;
-}
-
-/* Generic.Heading */
-/* line 14, ../scss/_default.scss */
-.gi {
-  color: #00a000;
-}
-
-/* Generic.Inserted */
-/* line 15, ../scss/_default.scss */
-.go {
-  color: #888888;
-}
-
-/* Generic.Output */
-/* line 16, ../scss/_default.scss */
-.gp {
-  color: #000080;
-  font-weight: bold;
-}
-
-/* Generic.Prompt */
-/* line 17, ../scss/_default.scss */
-.gs {
-  font-weight: bold;
-}
-
-/* Generic.Strong */
-/* line 18, ../scss/_default.scss */
-.gu {
-  color: #800080;
-  font-weight: bold;
-}
-
-/* Generic.Subheading */
-/* line 19, ../scss/_default.scss */
-.gt {
-  color: #0044dd;
-}
-
-/* Generic.Traceback */
-/* line 20, ../scss/_default.scss */
-.kc {
-  color: #008000;
-  font-weight: bold;
-}
-
-/* Keyword.Constant */
-/* line 21, ../scss/_default.scss */
-.kd {
-  color: #008000;
-  font-weight: bold;
-}
-
-/* Keyword.Declaration */
-/* line 22, ../scss/_default.scss */
-.kn {
-  color: #008000;
-  font-weight: bold;
-}
-
-/* Keyword.Namespace */
-/* line 23, ../scss/_default.scss */
-.kp {
-  color: green;
-}
-
-/* Keyword.Pseudo */
-/* line 24, ../scss/_default.scss */
-.kr {
-  color: #008000;
-  font-weight: bold;
-}
-
-/* Keyword.Reserved */
-/* line 25, ../scss/_default.scss */
-.kt {
-  color: #b00040;
-}
-
-/* Keyword.Type */
-/* line 26, ../scss/_default.scss */
-.m {
-  color: #666666;
-}
-
-/* Literal.Number */
-/* line 27, ../scss/_default.scss */
-.s {
-  color: #ba2121;
-}
-
-/* Literal.String */
-/* line 28, ../scss/_default.scss */
-.na {
-  color: #7d9029;
-}
-
-/* Name.Attribute */
-/* line 29, ../scss/_default.scss */
-.nb {
-  color: green;
-}
-
-/* Name.Builtin */
-/* line 30, ../scss/_default.scss */
-.nc {
-  color: #0000FF;
-  font-weight: bold;
-}
-
-/* Name.Class */
-/* line 31, ../scss/_default.scss */
-.no {
-  color: #880000;
-}
-
-/* Name.Constant */
-/* line 32, ../scss/_default.scss */
-.nd {
-  color: #aa22ff;
-}
-
-/* Name.Decorator */
-/* line 33, ../scss/_default.scss */
-.ni {
-  color: #999999;
-  font-weight: bold;
-}
-
-/* Name.Entity */
-/* line 34, ../scss/_default.scss */
-.ne {
-  color: #D2413A;
-  font-weight: bold;
-}
-
-/* Name.Exception */
-/* line 35, ../scss/_default.scss */
-.nf {
-  color: blue;
-}
-
-/* Name.Function */
-/* line 36, ../scss/_default.scss */
-.nl {
-  color: #a0a000;
-}
-
-/* Name.Label */
-/* line 37, ../scss/_default.scss */
-.nn {
-  color: #0000FF;
-  font-weight: bold;
-}
-
-/* Name.Namespace */
-/* line 38, ../scss/_default.scss */
-.nt {
-  color: #008000;
-  font-weight: bold;
-}
-
-/* Name.Tag */
-/* line 39, ../scss/_default.scss */
-.nv {
-  color: #19177c;
-}
-
-/* Name.Variable */
-/* line 40, ../scss/_default.scss */
-.ow {
-  color: #AA22FF;
-  font-weight: bold;
-}
-
-/* Operator.Word */
-/* line 41, ../scss/_default.scss */
-.w {
-  color: #bbbbbb;
-}
-
-/* Text.Whitespace */
-/* line 42, ../scss/_default.scss */
-.mf {
-  color: #666666;
-}
-
-/* Literal.Number.Float */
-/* line 43, ../scss/_default.scss */
-.mh {
-  color: #666666;
-}
-
-/* Literal.Number.Hex */
-/* line 44, ../scss/_default.scss */
-.mi {
-  color: #666666;
-}
-
-/* Literal.Number.Integer */
-/* line 45, ../scss/_default.scss */
-.mo {
-  color: #666666;
-}
-
-/* Literal.Number.Oct */
-/* line 46, ../scss/_default.scss */
-.sb {
-  color: #ba2121;
-}
-
-/* Literal.String.Backtick */
-/* line 47, ../scss/_default.scss */
-.sc {
-  color: #ba2121;
-}
-
-/* Literal.String.Char */
-/* line 48, ../scss/_default.scss */
-.sd {
-  color: #BA2121;
-  font-style: italic;
-}
-
-/* Literal.String.Doc */
-/* line 49, ../scss/_default.scss */
-.s2 {
-  color: #ba2121;
-}
-
-/* Literal.String.Double */
-/* line 50, ../scss/_default.scss */
-.se {
-  color: #BB6622;
-  font-weight: bold;
-}
-
-/* Literal.String.Escape */
-/* line 51, ../scss/_default.scss */
-.sh {
-  color: #ba2121;
-}
-
-/* Literal.String.Heredoc */
-/* line 52, ../scss/_default.scss */
-.si {
-  color: #BB6688;
-  font-weight: bold;
-}
-
-/* Literal.String.Interpol */
-/* line 53, ../scss/_default.scss */
-.sx {
-  color: green;
-}
-
-/* Literal.String.Other */
-/* line 54, ../scss/_default.scss */
-.sr {
-  color: #bb6688;
-}
-
-/* Literal.String.Regex */
-/* line 55, ../scss/_default.scss */
-.s1 {
-  color: #ba2121;
-}
-
-/* Literal.String.Single */
-/* line 56, ../scss/_default.scss */
-.ss {
-  color: #19177c;
-}
-
-/* Literal.String.Symbol */
-/* line 57, ../scss/_default.scss */
-.bp {
-  color: green;
-}
-
-/* Name.Builtin.Pseudo */
-/* line 58, ../scss/_default.scss */
-.vc {
-  color: #19177c;
-}
-
-/* Name.Variable.Class */
-/* line 59, ../scss/_default.scss */
-.vg {
-  color: #19177c;
-}
-
-/* Name.Variable.Global */
-/* line 60, ../scss/_default.scss */
-.vi {
-  color: #19177c;
-}
-
-/* Name.Variable.Instance */
-/* line 61, ../scss/_default.scss */
-.il {
-  color: #666666;
-}
-
-/* Literal.Number.Integer.Long */

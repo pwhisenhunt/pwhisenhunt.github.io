@@ -4,7 +4,7 @@ body {
 
 article {
     h3 {
-        margin-bottom: 0;        
+        margin-bottom: 0;
     }
     p {
         margin-top: 0;
@@ -13,39 +13,6 @@ article {
 
 img {
     padding: 15px;
-}
-
-.navbar {
-    background: none;
-    border: none;
-    margin-bottom: 0;
-
-    h1 {
-        margin: 0;
-    }
-
-    .navbar-collapse {
-        padding: 0;
-    }
-
-    .navbar-nav {
-        float:none;
-        margin: 0 auto;
-        display: table;
-        table-layout: fixed;
-    }
-
-    .navbar-nav>li>a {
-        background: none;
-        text-decoration:none;
-        color: $color-accent;
-        @include transition-property(color);
-        @include transition-duration(all 2s linear);
-    }
-    .navbar-nav>li.active>a, .navbar-nav>li.active>a:hover {
-        background: none;
-        color: $color-primary;
-    }
 }
 
 a {
@@ -58,23 +25,6 @@ a {
 a:hover {
     text-decoration:none;
     color: $color-primary;
-}  
-
-.icon {
-    width: 32px;
-    height: 32px;
-    @include transition-property(rotate);
-    @include transition-duration(0.25s);
-    @include rotate(0deg);
-    padding:0;
-    text-align:center;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.icon:hover {
-    @include rotate(20deg);
 }
 
 footer {
@@ -85,7 +35,7 @@ footer {
     text-align: center;
 
     a {
-        color: $color-light;        
+        color: $color-light;
     }
 }
 
