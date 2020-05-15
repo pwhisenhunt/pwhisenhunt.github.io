@@ -1,0 +1,106 @@
+---
+---
+
+// variables 
+$dark-grey: #6F6B6B;
+$light-grey: #C6CECF;
+$light-blue: #8BCBFA;
+$medium-blue: #1097FA;
+
+$primary-text-bold: 700;
+$primary-text-italic: italic;
+
+@mixin accent-text
+	font-family: acier-bat-solid, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: $light-grey;
+
+@mixin primary-text
+	font-family: itc-galliard, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+
+@mixin link-text
+	@include accent-text
+	font-size: 16px;
+	color: $light-blue;
+	text-decoration-line: none;
+
+
+@mixin primary-header
+	@include accent-text;
+	font-size: 24px;
+	margin: -8px;
+
+
+body
+	@include primary-text;
+	color: $dark_grey;
+
+ul
+	list-style-type: none;
+
+a 
+	@include link-text;
+
+
+h1, h2
+	@include primary-header;
+
+
+.page-heading
+	margin-left: 164px;
+	margin-top: 332px;
+	margin-bottom: 332px;
+
+.nav-menu 
+	margin-left: 104px;
+
+.nav-menu-item
+	display: inline-block;
+	padding: 6px 12px;
+
+.social-media-links
+	float: right;
+	margin-right: 104px;
+
+.social-media-link
+	display: inline-block;
+	padding: 8px 16px;
+
+.heading-emphasis
+	color: $medium-blue;
+
+.background-image-container 
+	height: 164px;
+	width: 100%;
+	opacity: 50%;
+
+	position: fixed;
+	bottom: 0;
+	background-image: url("images/ocean_wave.svg");
+
+.personal-information-section
+	margin-left: 164px;
+
+
+.blog-section
+	margin-top: 216px;
+	margin-left: 164px;
+
+.contact-section
+	margin-top: 216px;
+	margin-bottom: 332px;
+	margin-left: 164px;
+
+.heading-decoration
+	display: inline-block;
+	height: 24px;
+	width: 112px;
+	margin-left: 16px;
+	opacity: 75%;
+	background-image: url("images/small_wave.svg");
