@@ -31,7 +31,6 @@ $primary-text-italic: italic;
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.5;
-	letter-spacing: 1px;
 	color: $dark-grey;
 
 @mixin link-text
@@ -40,12 +39,20 @@ $primary-text-italic: italic;
 	color: $light-blue;
 	text-decoration-line: none;
 	letter-spacing: 1px;
+	margin: 2px;
 
 
 @mixin primary-header
 	@include accent-text;
 	font-size: 24px;
 
+@mixin small-screen-section-spacing
+	width: 100%
+	margin: 332px 0 332px 0;
+
+@mixin small-screen-container-spacing
+	width: 100%; 
+	margin: 0 auto;
 
 
 // element styles
@@ -101,11 +108,11 @@ h1, h2
 
 // heading styles
 
-.page-heading	
+.page-heading-section	
 	clear: both;
-	margin: 332px 0px 332px 0;
+	margin: 332px 40px 332px 40px;
 
-.page-heading h1
+.page-heading-section h1
 	margin: 0;
 
 .heading-emphasis
@@ -127,8 +134,8 @@ h1, h2
 	overflow: auto;
 
 .information-container
-	width: 288px;
-	margin: 24px;
+	width: 40%;
+	margin: 40px;
 	float: left;
 
 .information-container h2
@@ -137,37 +144,62 @@ h1, h2
 
 .information-container p
 	@include primary-text;
-	width: 300px;
 
+.information-container p a
+	@include link-text;
+
+// writing section styles
+
+.writing-section
+	margin: 40px 40px 332px 40px;
+
+.writing-list
+	list-style-type: none;
+	padding-left: 0;
+
+.writing-list-item
+	margin-bottom: 24px;
+
+.writing-list a
+	@include link-text;
+	font-size: 16px;
+
+.writing-description 
+	@include primary-text;
+
+	letter-spacing: 0;
+	margin-top: 0;
 
 // contact information styles
 
 .contact-section
-	clear: both;
+	clear: both; 
 	margin-bottom: 332px;
 	overflow: auto;
 
-.contact-information
-	float: left; 
-	padding: 12px;
+.contact-information-container
+	float: left;
+	width: 40%
+	margin: 40px;
 
-.contact-information h2
+.contact-information-container h2
 	margin-bottom: -8px;
 
-.contact-information p
+.contact-information-container p
 	@include primary-text;
 
 .contact-information-link
 	@include link-text;
 
 .profile-pic-container
-	float: right;
+	float: left;
+	width: 40%
+	margin: 40px;
 
-.profile-pic 
-	height: 332px;
+.profile-pic 	
+	height: 296px;
 	position: relative;
 	z-index: 2;
-	box-shadow: 0px 1px 2px $dark-grey;
 
 
 
@@ -176,27 +208,31 @@ h1, h2
 	.container
 		width: 456px; 
 
-	.page-heading
-		margin-left: 48px;
-	
-	.personal-information-section
-		margin-left: 48px;
-
-	.contact-section
-		margin-left: 48px;
-	
-	.profile-pic-container
-		width: 248px;
-		float: none;
-
 	.profile-pic
 		height: 248px;
 
 
 // medium screens
 @media (max-width: 1000px)
-	.profile-pic-container
+	.page-heading-section
+		@include small-screen-section-spacing;
+
+	.information-container
+		@include small-screen-container-spacing;
+		margin-bottom: 48px;
+
+	.writing-section
+		@include small-screen-section-spacing;
+
+	.contact-information-container
+		@include small-screen-container-spacing;
+		
 		float: none;
+
+	.profile-pic-container
+		@include small-screen-container-spacing;
+		
+		float: none
 
 	.profile-pic
 		height: 304px;
