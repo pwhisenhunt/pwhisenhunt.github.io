@@ -8,11 +8,6 @@ $medium-blue: #1097FA;
 $primary-text-bold: 700;
 $primary-text-italic: italic;
 
-@mixin nav-menu-links
-	padding: 0;
-	text-align: center;
-	list-style-type: none;
-
 @mixin accent-text
 	font-family: acier-bat-solid, sans-serif;
 	font-weight: 400;
@@ -33,7 +28,6 @@ $primary-text-italic: italic;
 	color: $light-blue;
 	text-decoration-line: none;
 	letter-spacing: 1px;
-	margin: 2px;
 
 @mixin primary-header
 	@include accent-text;
@@ -61,27 +55,33 @@ h1, h2
 	background-image: url("images/ocean_wave.svg");
 
 .container nav
-	padding-top: 16px;
+	height: 50px; 
+	margin: 24px 40px 332px 40px;
 
 .nav-menu-links
-	@include nav-menu-links;
-
+	padding: 0;
+	text-align: center;
+	list-style-type: none;
 	float: left;
+	width: 100%;
 
-.nav-menu-social-links
-	@include nav-menu-links;
-
-	float: right;
-
-.nav-menu-item .nav-link
+.nav-link
 	@include link-text;
 
-.nav-menu-item
+@mixin nav-menu-item
 	display: inline-block;
 	padding-left: 16px;
 
 	&:first-child
 		padding-left: 0;
+
+.nav-menu-item
+	@include nav-menu-item;
+
+	float: left;
+
+.social
+	float: right;
 
 .page-heading
 	clear: both;
@@ -181,44 +181,65 @@ h1, h2
 	z-index: 2;
 
 
-@mixin small-screen-section-spacing
-	width: 100%
-	margin: 332px 0 332px 0;
-
-@mixin small-screen-container-spacing
+@mixin center-content
 	width: 100%; 
 	margin: 0 auto;
-	
-@media (max-width: 700px)
-	.container
-		width: 456px; 
-
-	.profile-pic
-		height: 248px;
+	padding: 16px;
 
 @media (max-width: 1000px)
+	.container nav
+		margin: 16px 0 196px 16px;
+
 	.page-heading
-		@include small-screen-section-spacing;
+		@include center-content;
+		margin-bottom: 332px;
+
+	.heading-decoration
+		display: none;
 
 	.information-container
-		@include small-screen-container-spacing;
+		@include center-content;
 		margin-bottom: 48px;
 
 	.writing
-		@include small-screen-section-spacing;
+		@include center-content
+		margin-bottom: 332px;
 
 	.contact-information-container
-		@include small-screen-container-spacing;
+		@include center-content;
 		
 		float: none;
 
 	.profile-pic-container
-		@include small-screen-container-spacing;
+		@include center-content;
 		
 		float: none
 
 	.profile-pic
-		height: 304px;
+		height: 248px;
 
+	.nav-menu-links
+		text-align: left;	
 
+	.nav-link
+		font-size: 12px;
 
+	.social
+		float: left;
+
+	.nav-menu-item
+		display: block;
+		width: 100%
+		font-size: 8px;
+		padding: 4px;
+		padding-left: 0;
+
+@media (max-width: 500px)
+	.profile-pic
+		height: 164px;
+
+@media (min-width: 1800px)
+	.page-heading
+		margin-bottom: 500px;
+	.page-heading h1
+		font-size: 32px;
