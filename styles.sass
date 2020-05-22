@@ -1,18 +1,12 @@
 ---
 ---
 
-
-// variables 
-
 $dark-grey: #6F6B6B;
 $light-grey: #C6CECF;
 $light-blue: #8BCBFA;
 $medium-blue: #1097FA;
 $primary-text-bold: 700;
 $primary-text-italic: italic;
-
-
-// mixins
 
 @mixin nav-menu-links
 	padding: 0;
@@ -41,28 +35,15 @@ $primary-text-italic: italic;
 	letter-spacing: 1px;
 	margin: 2px;
 
-
 @mixin primary-header
 	@include accent-text;
 	font-size: 24px;
-
-@mixin small-screen-section-spacing
-	width: 100%
-	margin: 332px 0 332px 0;
-
-@mixin small-screen-container-spacing
-	width: 100%; 
-	margin: 0 auto;
-
-
-// element styles
 
 * 
 	box-sizing: border-box;
 
 h1, h2
 	@include primary-header;
-
 
 .container
 	width: 80%;
@@ -79,10 +60,7 @@ h1, h2
 	bottom: 0;
 	background-image: url("images/ocean_wave.svg");
 
-
-// nav styles
-
-.main-nav
+.container nav
 	padding-top: 16px;
 
 .nav-menu-links
@@ -95,7 +73,7 @@ h1, h2
 
 	float: right;
 
-.nav-menu-item a 
+.nav-menu-item .nav-link
 	@include link-text;
 
 .nav-menu-item
@@ -105,14 +83,11 @@ h1, h2
 	&:first-child
 		padding-left: 0;
 
-
-// heading styles
-
-.page-heading-section	
+.page-heading
 	clear: both;
 	margin: 332px 40px 332px 40px;
 
-.page-heading-section h1
+.page-heading h1
 	margin: 0;
 
 .heading-emphasis
@@ -126,10 +101,7 @@ h1, h2
 	opacity: 65%;
 	background-image: url("images/small_wave.svg");
 
-
-// personal information styles
-
-.personal-information-section
+.personal-information
 	margin-bottom: 332px;
 	overflow: auto;
 
@@ -145,19 +117,21 @@ h1, h2
 .information-container p
 	@include primary-text;
 
-.information-container p a
+.information-container p .in-text-link
 	@include link-text;
 
 .information-container ul 
 	padding-left: 0;
 
-.emoji
+.emoji-list
+	list-style-type: none;
+
+.emoji-list-item
+	display: inline;
 	font-size: 32px;
 	padding-right: 4px; 
 
-// writing section styles
-
-.writing-section
+.writing
 	margin: 40px 40px 332px 40px;
 
 .writing-list
@@ -167,7 +141,7 @@ h1, h2
 .writing-list-item
 	margin-bottom: 24px;
 
-.writing-list a
+.writing-list .in-text-link
 	@include link-text;
 	font-size: 16px;
 
@@ -177,9 +151,7 @@ h1, h2
 	letter-spacing: 0;
 	margin-top: 0;
 
-// contact information styles
-
-.contact-section
+.contact
 	clear: both; 
 	margin-bottom: 332px;
 	overflow: auto;
@@ -209,8 +181,14 @@ h1, h2
 	z-index: 2;
 
 
+@mixin small-screen-section-spacing
+	width: 100%
+	margin: 332px 0 332px 0;
 
-// super small screens
+@mixin small-screen-container-spacing
+	width: 100%; 
+	margin: 0 auto;
+	
 @media (max-width: 700px)
 	.container
 		width: 456px; 
@@ -218,17 +196,15 @@ h1, h2
 	.profile-pic
 		height: 248px;
 
-
-// medium screens
 @media (max-width: 1000px)
-	.page-heading-section
+	.page-heading
 		@include small-screen-section-spacing;
 
 	.information-container
 		@include small-screen-container-spacing;
 		margin-bottom: 48px;
 
-	.writing-section
+	.writing
 		@include small-screen-section-spacing;
 
 	.contact-information-container
