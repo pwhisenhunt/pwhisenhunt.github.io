@@ -4,243 +4,243 @@
 $dark-grey: #6F6B6B
 $light-grey: #C6CECF
 $light-blue: #8BCBFA
-$medium-blue: #1097FA;
-$primary-text-bold: 700;
-$primary-text-italic: italic;
+$medium-blue: #1097FA
+$primary-text-bold: 700
+$primary-text-italic: italic
 
 @mixin accent-text
-	font-family: acier-bat-solid, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	color: $light-grey;
+  font-family: acier-bat-solid, sans-serif
+  font-weight: 400
+  font-style: normal
+  color: $light-grey
 
 @mixin primary-text
-	font-family: itc-galliard, serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 14px;
-	line-height: 1.5;
-	color: $dark-grey;
+  font-family: itc-galliard, serif
+  font-weight: 400
+  font-style: normal
+  font-size: 14px
+  line-height: 1.5
+  color: $dark-grey
 
 @mixin link-text
-	@include accent-text
-	font-size: 14px;
-	color: $light-blue;
-	text-decoration-line: none;
-	letter-spacing: 1px;
+  @include accent-text
+  font-size: 14px
+  color: $light-blue
+  text-decoration-line: none
+  letter-spacing: 1px
 
 @mixin primary-header
-	@include accent-text;
-	font-size: 24px;
+  @include accent-text
+  font-size: 24px
 
 * 
-	box-sizing: border-box;
+  box-sizing: border-box
 
 h1, h2
-	@include primary-header;
+  @include primary-header
 
 .container
-	width: 80%;
-	margin: 0 auto;
-	overflow: auto;
+  width: 80%
+  margin: 0 auto
+  overflow: auto
 
 .background-image-container 
-	height: 164px;
-	width: 100%;
-	opacity: 50%;
+  height: 164px
+  width: 100%
+  opacity: 50%
 
-	position: fixed;
-	z-index: 1;
-	bottom: 0;
-	background-image: url("images/ocean_wave.svg");
+  position: fixed
+  z-index: 1
+  bottom: 0
+  background-image: url("images/ocean_wave.svg")
 
 .container nav
-	height: 50px; 
-	margin: 24px 40px 332px 40px;
+  height: 50px 
+  margin: 24px 40px 332px 40px
 
 .nav-menu-links
-	padding: 0;
-	text-align: center;
-	list-style-type: none;
-	float: left;
-	width: 100%;
+  padding: 0
+  text-align: center
+  list-style-type: none
+  float: left
+  width: 100%
 
 .nav-link
-	@include link-text;
+  @include link-text
 
 @mixin nav-menu-item
-	display: inline-block;
-	padding-left: 16px;
+  display: inline-block
+  padding-left: 16px
 
-	&:first-child
-		padding-left: 0;
+  &:first-child
+    padding-left: 0
 
 .nav-menu-item
-	@include nav-menu-item;
+  @include nav-menu-item
 
-	float: left;
+  float: left
 
 .social
-	float: right;
+  float: right
 
 .page-heading
-	clear: both;
-	margin: 332px 40px 332px 40px;
+  clear: both
+  margin: 332px 40px 332px 40px
 
 .page-heading h1
-	margin: 0;
+  margin: 0
 
 .heading-emphasis
-	color: $medium-blue;
+  color: $medium-blue
 
 .heading-decoration
-	display: inline-block;
-	height: 24px;
-	width: 112px;
-	margin-left: 8px;
-	opacity: 65%;
-	background-image: url("images/small_wave.svg");
+  display: inline-block
+  height: 24px
+  width: 112px
+  margin-left: 8px
+  opacity: 65%
+  background-image: url("images/small_wave.svg")
 
 .personal-information
-	margin-bottom: 332px;
-	overflow: auto;
+  margin-bottom: 332px
+  overflow: auto
 
 .information-container
-	width: 40%;
-	margin: 40px;
-	float: left;
+  width: 40%
+  margin: 40px
+  float: left
 
 .information-container h2
-	letter-spacing: 1px; 
-	margin-bottom: -8px;
+  letter-spacing: 1px 
+  margin-bottom: -8px
 
 .information-container p
-	@include primary-text;
+  @include primary-text
 
 .information-container p .in-text-link
-	@include link-text;
+  @include link-text
 
 .information-container ul 
-	padding-left: 0;
+  padding-left: 0
 
 .emoji-list
-	list-style-type: none;
+  list-style-type: none
 
 .emoji-list-item
-	display: inline;
-	font-size: 32px;
-	padding-right: 4px; 
+  display: inline
+  font-size: 32px
+  padding-right: 4px 
 
 .writing
-	margin: 40px 40px 332px 40px;
+  margin: 40px 40px 332px 40px
 
 .writing-list
-	list-style-type: none;
-	padding-left: 0;
+  list-style-type: none
+  padding-left: 0
 
 .writing-list-item
-	margin-bottom: 24px;
+  margin-bottom: 24px
 
 .writing-list .in-text-link
-	@include link-text;
-	font-size: 16px;
+  @include link-text
+  font-size: 16px
 
 .writing-description 
-	@include primary-text;
+  @include primary-text
 
-	letter-spacing: 0;
-	margin-top: 0;
+  letter-spacing: 0
+  margin-top: 0
 
 .contact
-	clear: both; 
-	margin-bottom: 332px;
-	overflow: auto;
+  clear: both 
+  margin-bottom: 332px
+  overflow: auto
 
 .contact-information-container
-	float: left;
-	width: 40%
-	margin: 40px;
+  float: left
+  width: 40%
+  margin: 40px
 
 .contact-information-container h2
-	margin-bottom: -8px;
+  margin-bottom: -8px
 
 .contact-information-container p
-	@include primary-text;
+  @include primary-text
 
 .contact-information-link
-	@include link-text;
+  @include link-text
 
 .profile-pic-container
-	float: left;
-	width: 40%
-	margin: 40px;
+  float: left
+  width: 40%
+  margin: 40px
 
-.profile-pic 	
-	height: 296px;
-	position: relative;
-	z-index: 2;
+.profile-pic  
+  height: 296px
+  position: relative
+  z-index: 2
 
 
 @mixin center-content
-	width: 100%; 
-	margin: 0 auto;
-	padding: 16px;
+  width: 100% 
+  margin: 0 auto
+  padding: 16px
 
 @media (min-width: 1800px)
-	.page-heading
-		margin-bottom: 500px;
-	
-	.page-heading h1
-		font-size: 32px;
+  .page-heading
+    margin-bottom: 500px
+  
+  .page-heading h1
+    font-size: 32px
 
 @media (max-width: 1000px)
-	.container nav
-		margin: 16px 0 196px 16px;
+  .container nav
+    margin: 16px 0 196px 16px
 
-	.page-heading
-		@include center-content;
-		margin-bottom: 332px;
+  .page-heading
+    @include center-content
+    margin-bottom: 332px
 
-	.heading-decoration
-		display: none;
+  .heading-decoration
+    display: none
 
-	.information-container
-		@include center-content;
-		margin-bottom: 48px;
+  .information-container
+    @include center-content
+    margin-bottom: 48px
 
-	.writing
-		@include center-content
-		margin-bottom: 332px;
+  .writing
+    @include center-content
+    margin-bottom: 332px
 
-	.contact-information-container
-		@include center-content;
-		
-		float: none;
+  .contact-information-container
+    @include center-content
+    
+    float: none
 
-	.profile-pic-container
-		@include center-content;
-		
-		float: none
+  .profile-pic-container
+    @include center-content
+    
+    float: none
 
-	.profile-pic
-		height: 248px;
+  .profile-pic
+    height: 248px
 
-	.nav-menu-links
-		text-align: left;	
+  .nav-menu-links
+    text-align: left 
 
-	.nav-link
-		font-size: 12px;
+  .nav-link
+    font-size: 12px
 
-	.social
-		float: left;
+  .social
+    float: left
 
-	.nav-menu-item
-		display: block;
-		width: 100%
-		font-size: 8px;
-		padding: 4px;
-		padding-left: 0;
+  .nav-menu-item
+    display: block
+    width: 100%
+    font-size: 8px
+    padding: 4px
+    padding-left: 0
 
 @media (max-width: 500px)
-	.profile-pic
-		height: 164px;
+  .profile-pic
+    height: 164px
