@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "jekyll", '>=4.0.1', '< 5.0'
+gem "jekyll", '>=4.1.1', '< 5.0'
