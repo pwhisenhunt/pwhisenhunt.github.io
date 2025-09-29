@@ -20,7 +20,8 @@
                 line-height: 2;
             }
             main {
-                margin-top: 100px;
+                padding: 10px;
+                margin-top: 25px;
                 max-width: 760px;
             }
             a {
@@ -30,9 +31,24 @@
             a:hover {
                 color: yellow;
             }
+            .profile-pic {
+                display: flex; 
+                align-items: center;
+            }
             img {
                 border-radius: 20px;
                 width: 250px;
+            }
+            .about {
+                align-items: center;
+                display: flex;
+                flex-direction: row; 
+                gap: 20px;
+            }
+            @media (max-width: 800px) {
+                .about {
+                    flex-direction: column;
+                }
             }
         </style>
     </head>
